@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Providers Directory | GreenConnect Nigeria</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo">
+        Green<span>Connect</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="providers.html" class="active">Providers</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Service</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title" style="text-align: left; margin-bottom: 24px;">
+        <h2>Energy Providers Directory</h2>
+        <p>Browse verified solar companies and compare services across Nigeria.</p>
+      </div>
+
+      <!-- Filter & Search Bar -->
+      <div class="filter-bar">
+        <input type="text" id="search" placeholder="Search by provider name, location (e.g. Lagos, Abuja)...">
+        
+        <select id="service-filter">
+          <option value="all">All Services</option>
+          <option value="Solar Installation">Solar Installation</option>
+          <option value="Battery Solutions">Battery Solutions</option>
+          <option value="Inverter Systems">Inverter Systems</option>
+          <option value="Mini-Grid Solutions">Mini-Grid Solutions</option>
+        </select>
+      </div>
+
+      <!-- Provider Cards Grid (Rendered dynamically by js/app.js) -->
+      <div class="grid-3" id="provider-list">
+        <!-- Cards will load here via JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4 style="color: var(--white); margin-bottom: 8px;">GreenConnect Nigeria</h4>
+        <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5; max-width: 300px;">
+          Connecting homes and businesses to reliable solar energy providers across Nigeria.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="providers.html">Providers</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p style="color: #94a3b8; font-size: 0.9rem;">
+          Phone: 080-12345678<br>
+          Email: info@greenconnect.ng<br>
+          Location: Lagos & Abuja, Nigeria
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 GreenConnect Nigeria. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

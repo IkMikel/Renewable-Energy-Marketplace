@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Consultation | GreenConnect Nigeria</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo">
+        Green<span>Connect</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="providers.html">Providers</a></li>
+          <li><a href="booking.html" class="active">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <a href="providers.html" class="btn btn-outline btn-sm">Find Providers</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Book a Solar Consultation</h2>
+        <p>Request an energy evaluation or installation quote from certified providers.</p>
+      </div>
+
+      <div class="form-container">
+        <form id="booking-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" class="form-control" placeholder="e.g. Babatunde Adeyemi" required>
+            <div class="error-msg" id="name-err">Please enter your full name.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+            <div class="error-msg" id="email-err">Please provide your email address.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" class="form-control" placeholder="080-12345678" required>
+            <div class="error-msg" id="phone-err">Please enter your phone number.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location (State & City) *</label>
+            <input type="text" id="location" class="form-control" placeholder="e.g. Lekki, Lagos" required>
+            <div class="error-msg" id="location-err">Please specify your location.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Needed Service *</label>
+            <select id="service" class="form-control" required>
+              <option value="">-- Select Service --</option>
+              <option value="Solar Installation">Solar Installation</option>
+              <option value="Battery Backup">Battery Solutions & Backup</option>
+              <option value="Inverter Systems">Inverter Systems & Upgrades</option>
+              <option value="Mini-Grid Setup">Commercial / Mini-Grid Setup</option>
+            </select>
+            <div class="error-msg" id="service-err">Please select a service.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="provider">Preferred Provider (Optional)</label>
+            <select id="provider" class="form-control">
+              <option value="">-- Any Available Provider --</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" placeholder="Tell us about the key appliances you want to power..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Success Modal Popup -->
+  <div class="modal-backdrop" id="success-modal">
+    <div class="modal-box">
+      <h3>Request Submitted!</h3>
+      <p>Thank you for submitting your request. A certified solar energy provider will contact you within 24 hours.</p>
+      <button type="button" class="btn btn-primary" id="modal-close">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4 style="color: var(--white); margin-bottom: 8px;">GreenConnect Nigeria</h4>
+        <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.5; max-width: 300px;">
+          Connecting homes and businesses to reliable solar energy providers across Nigeria.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="providers.html">Providers</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p style="color: #94a3b8; font-size: 0.9rem;">
+          Phone: 080-12345678<br>
+          Email: info@greenconnect.ng<br>
+          Location: Lagos & Abuja, Nigeria
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 GreenConnect Nigeria. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
